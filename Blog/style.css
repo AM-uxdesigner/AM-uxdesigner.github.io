@@ -1,0 +1,53 @@
+/* First CSS handwritten by Alejandro Morales */
+
+body {background-color: #282828;}
+#menu {background-color: #ffffff;}
+#articles {background-color: #ffffff;}
+
+hr {
+	color: black;
+	background-color: #ffffff; 
+}
+
+header {
+	background-color: #ffffff; 
+	font-family: futura; 
+	font-size: 40px
+}
+
+a { 
+	color:#000000; 
+	text-decoration:none;
+	font-family:futura; 
+	font-size: 12px; 
+	font-weight:bold; 
+}
+
+a:hover {
+	color: #a4a4a4;
+}
+
+h1 {
+	text-decoration:none;
+	font-family:futura; 
+	font-size: 18px;
+	font-weight:bold;
+}
+
+h3 {
+	text-decoration:none;
+	font-family:futura; 
+	font-size: 14px;
+	font-weight:bold;
+}
+p {
+	text-decoration:none;
+	font-family:futura; 
+	font-size: 12px;
+	font-weight:normal;
+}
+footer {
+	background-color: #ffffff; 
+	font-family: futura; 
+	font-size: 10px;
+}
