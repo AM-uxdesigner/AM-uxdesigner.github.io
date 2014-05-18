@@ -10,15 +10,15 @@ hr {
 
 header {
 	color: #ffffff; 
-	font-family: futura; 
-	font-size: 40px
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 40pt
 }
 
 a { 
 	color: #cebb99;
 	text-decoration:none;
 	font-family:times; 
-	font-size: 18px; 
+	font-size: 18pt; 
 	font-weight:normal; 
 }
 
@@ -28,18 +28,18 @@ a:hover {
 
 h1 {color: #230b03;
 	
-	font-family:tahoma; 
-	font-size: 18px;
+	font-family:'Fjalla One', sans-serif; 
+	font-size: 18pt;
 	font-weight:bold;
 }
 
 p {
 	font-family:times; 
-	font-size: 18px;
+	font-size: 18pt;
 	font-weight:normal;
 }
 footer {
 	 color: #cebb99;
 	font-family: times; 
-	font-size: 18px;
+	font-size: 18pt;
 }
