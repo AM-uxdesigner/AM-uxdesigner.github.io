@@ -7,16 +7,14 @@
 
 
 body {background-color: #282828;}
-#menu {background-color: #ffffff; text-transform: capitalize;}
-#articles {background-color: #ffffff;}
+#background {background-color: #ffffff}
+#top {}
+#menu {}
+#articles {}
+.headmenu {text-transform: lowercase;}
+hr {color: black; }
 
-hr {
-	color: black;
-	background-color: #ffffff; 
-}
-
-header {
-	background-color: #ffffff; 
+header { 
 	font-family: LeagueGothic;
 	text-transform: uppercase; 
 	font-size: 48pt
@@ -25,12 +23,10 @@ header {
 a { 
 	color:#000000; 
 	text-decoration:none;
-	text-transform: lowercase;
 	font-family:futura; 
 	font-size: 10pt; 
 	font-weight:bold; 
 }
-
 a:hover {
 	color: #a4a4a4;
 }
@@ -55,8 +51,7 @@ p {
 	font-size: 10pt;
 	font-weight:normal;
 }
-footer {
-	background-color: #ffffff; 
+footer { 
 	font-family: futura; 
 	font-size: 10pt;
 }
