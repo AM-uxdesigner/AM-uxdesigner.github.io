@@ -2,15 +2,14 @@
 
 body {background-color: #230b03;}
 #articles {background-color: #ffffff;}
-
+#dream {color:#cebb99;font-family: 'Vibur', cursive;}
+#beanscaffee {font-family: 'Fjalla One', sans-serif; color:#ffffff;}
 hr {
 	color: black;
 	background-color: #ffffff; 
 }
 
-header {
-	color: #ffffff; 
-	font-family: 'Fjalla One', sans-serif;
+#header {
 	font-size: 40pt
 }
 
