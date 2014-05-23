@@ -1,57 +1,124 @@
 /* First CSS handwritten by Alejandro Morales */
+
+/* Font imported into the html and called from here to format the titles */
 @font-face {
 	font-family: 'LeagueGothic';
 	src: url('type/LeagueGothic-Regular.otf');
-
 }
 
-
-body {background-color: #282828;}
-#background {background-color: #ffffff}
-#top {}
-#menu {}
-#articles {}
-.headmenu {text-transform: lowercase;}
-hr {color: black; }
-
-header { 
-	font-family: LeagueGothic;
-	text-transform: uppercase; 
-	font-size: 48pt
+/*classes to format the body color and container div background*/
+body {
+	background-color: #282828;
+	font-size: 16px;
+	font-family: sans-serif;
 }
 
+.background {
+	background-color: #ffffff;
+	width: 80%;
+	margin: auto;
+	padding: 10px 20px;
+}
+
+/* format the link colors and decoration of the same within the site */
 a { 
 	color:#000000; 
-	text-decoration:none;
-	font-family:futura; 
-	font-size: 10pt; 
-	font-weight:bold; 
+	text-decoration:none; 
+	font-size: 0.9rem;
+	font-weight: bold;
 }
+
 a:hover {
 	color: #a4a4a4;
 }
 
+/* header */
 h1 {
-	text-decoration:none;
+
 	font-family:LeagueGothic; 
-	text-transform: uppercase;
-	font-size: 24pt;
 	font-weight:bold;
 }
 
-h3 {
-	text-decoration:none;
-	font-family:futura; 
-	font-size: 12pt;
-	font-weight:bold;
+.top-header { 
+	border-bottom: 1px solid #000000;
+	padding: 0;
 }
+
+.main-title {
+	text-transform: uppercase;
+	margin: 0;
+	width: 35%;
+	font-size: 64px;
+	float: left;
+}
+
+/*.headmenu {
+	float: left;
+	width: 65%;
+}
+*/
+.headmenu ul {
+	float: right; 
+	list-style-type: none;
+	padding: 0;
+	margin-bottom: 0;
+}
+
+.headmenu ul li {
+	padding-right: 10px;
+	text-transform: lowercase;
+	display: inline-block;
+}
+
+/*.clear cleans the float proerties of the previous element*/
+.clear {
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+
+.content-wrap {
+	overflow: scroll;
+	margin-top: 20px;
+}
+
+/* format main menu */
+.mainmenu ul {
+	list-style-type: none;
+	float: left;
+	width: 20%;
+	padding: 5px;
+}
+
+.mainmenu li {
+	margin-bottom: 10px;
+}
+
+
+/*article section*/
+.articles {
+	float: right;
+	width: 70%;
+}
+
+.date {
+	font-size: 0.8rem;
+}
+
+.articles h1 {
+	margin-top: 0;
+}
+
 p {
 	text-decoration:none;
-	font-family:futura; 
 	font-size: 10pt;
 	font-weight:normal;
 }
+
+/*here comes the footer where "border-top" is the line that splits content from the footer*/
 footer { 
-	font-family: futura; 
+	font-weight: bold;
 	font-size: 10pt;
+	border-top: 1px solid #000000;
+	padding-top: 10px;
 }
