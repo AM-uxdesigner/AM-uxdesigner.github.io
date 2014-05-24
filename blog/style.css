@@ -12,10 +12,19 @@ body {
 	font-size: 16px;
 	font-family: sans-serif;
 }
+/*the next command prevents the padding to add to the margins 
+so boxes are contained within their sizes*/
+
+/* Delete this comment to activate
+* {
+	box-sizing: border-box;
+}
+*/
+
 
 .background {
 	background-color: #ffffff;
-	width: 80%;
+	max-width: 80%;
 	margin: auto;
 	padding: 10px 20px;
 }
@@ -42,12 +51,13 @@ h1 {
 .top-header { 
 	border-bottom: 1px solid #000000;
 	padding: 0;
+	position: relative;
 }
 
 .main-title {
 	text-transform: uppercase;
 	margin: 0;
-	width: 35%;
+	max-width: 35%;
 	font-size: 64px;
 	float: left;
 }
@@ -57,17 +67,26 @@ h1 {
 	width: 65%;
 }
 */
+.headmenu {
+
+}
+
 .headmenu ul {
 	float: right; 
 	list-style-type: none;
 	padding: 0;
 	margin-bottom: 0;
+	position: absolute;
+	right: 0;
+	bottom: 5px;
+
 }
 
 .headmenu ul li {
 	padding-right: 10px;
 	text-transform: lowercase;
 	display: inline-block;
+
 }
 
 /*.clear cleans the float proerties of the previous element*/
@@ -86,7 +105,7 @@ h1 {
 .mainmenu ul {
 	list-style-type: none;
 	float: left;
-	width: 20%;
+	max-width: 20%;
 	padding: 5px;
 }
 
@@ -98,7 +117,7 @@ h1 {
 /*article section*/
 .articles {
 	float: right;
-	width: 70%;
+	max-width: 70%;
 }
 
 .date {
@@ -121,4 +140,5 @@ footer {
 	font-size: 10pt;
 	border-top: 1px solid #000000;
 	padding-top: 10px;
+	
 }
