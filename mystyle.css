@@ -17,7 +17,7 @@ body {
 /*header */
 
 header h1{
-	margin: auto;
+	margin: 0.3% auto;
 	text-align: center;
 	font-family: Monoton, cursive;
 	line-height: 0.9em;
@@ -35,11 +35,18 @@ h2 {
 	font-size: 1rem;
 	border-bottom: 1px solid #404040;
 	border-top: 1px solid #404040;
+	border-radius: 4px;
 	padding: 2px 4px 2px 4px;
 	/*font-weight: bold;*/
 }
 
+header h2 {
+	text-align: center;
+}
+
 img {
+	display: block;
+	margin: auto;
 	padding: 4px;
 	border: 1px solid #404040;
 	border-radius: 4px;
@@ -47,13 +54,34 @@ img {
 }
 
 /*articles*/
+.content {
+width: auto;
+}
+
 
 article {
-	margin: auto;
+	width: 32%;
+	/*min-width: 312px;*/
+	max-height: 250px;
+	min-height: 70px;
+	margin: 0.2% 0.2%;
+	float: left;
 	padding:2px 4px 2px 4px;
 	background-color: #303030;
 	border: 1px solid #404040;
 	border-radius: 4px;
+	font-size: 0.9rem;
+}
+
+ul {
+
+	list-style-type: none;
+}
+
+.clear {
+	clear: both;
+	margin: 0;
+	padding: 0;
 }
 
 /* Footer */
