@@ -95,7 +95,12 @@ width: auto;
 }
 
 @media screen and (max-width: 600px), (device-width: 320px) {
+	body {
+		font-size: 14px;
+	}
+
 	header h1{
+		max-width: 100%;
 		font-size: 2rem;
 	}
 	.article {
