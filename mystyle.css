@@ -34,7 +34,7 @@ header h1{
 	font-size: 3rem;
 	color: green;
 	background-color: #303030;
-	width: 360px;
+	max-width: 360px;
 	border: 1px solid #404040;
 	border-radius: 4px;
 }
@@ -57,7 +57,8 @@ header h2 {
 img {
 	display: block;
 	margin: auto;
-	max-width: 150px;
+	max-width: 15%;
+	min-width:150px;
 	padding: 4px;
 	border: 1px solid #404040;
 	border-radius: 50%;
@@ -71,9 +72,9 @@ width: auto;
 
 .article {
 	display: inline-block;
-	float: inline-block;
+	float: left;
 	max-width: 33%;
-	min-width: 32%;
+	min-width: 33%;
 	border: 1px solid #404040;
 	border-radius: 4px;
 	font-size: 0.9rem;
@@ -81,10 +82,25 @@ width: auto;
 	background-color: #303030;
 }
 
-@media screen and (max-width: 600px) {
+.article h2 {
+	display: block;
+}
+
+@media screen and (max-width: 900px){
+	.article{
+		max-width: 50%;
+		min-width: 50%;
+	}
+
+}
+
+@media screen and (max-width: 600px), (device-width: 320px) {
+	header h1{
+		font-size: 2rem;
+	}
 	.article {
 		max-width: 100%;
-		clear: both;
+		float: none;
 		display: block;
 		left: 0;
 		top: 0;
