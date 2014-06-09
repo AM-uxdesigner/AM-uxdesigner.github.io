@@ -1,0 +1,103 @@
+/*CSS file belongs to the online shop*/
+
+*{
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #cebb99;
+	font-size: 18pt;
+
+}
+ul {
+	list-style-type: none;
+}
+.sidebar {
+	width:30%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: green;
+	text-align: auto;
+	padding-top: 60px;
+}
+.main {
+	width: 70%;
+	height: 100%;
+	margin-left: 30%;
+	/*padding-top: 15%;*/
+}
+.head {
+	background-color: blue;
+	position: fixed;
+	/*left: 30%;*/
+	width: 100%;
+	height: 40px;
+}
+.content {
+	top-margin: 20%
+	height: 80%;
+}
+/*this is the menu on top of the left div, hover displays hidden elements*/
+
+ul#mainmenu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	width: 30%;
+	height: 40px;
+	overflow: hidden;
+}
+
+ul#mainmenu li {
+	box-sizing: border-box;
+	background-color: #303030;
+	display: block;
+	height: 40px;
+	padding: 5px;
+	/*border-bottom: 4px solid blue;*/
+}
+
+ul#mainmenu:hover{
+	overflow: visible;
+}
+
+ul#mainmenu li:hover{
+	background-color: orange;
+	overflow: visible;
+}
+
+/*second menu with accordeon*/
+
+ul#submenu {	
+	margin: 0;
+	padding: 0;
+	/*width: 30%;*/}
+
+ul#submenu li {
+	background-color: #404040;
+	/*height: 40px;*/
+	padding: 5px;
+	/*overflow: hidden;*/
+}
+ul#submenu ul {
+	display: none;
+	padding: 0;
+}
+ul#submenu li:hover ul{
+	display: block;
+}
+
+ul#submenu li:hover{
+	background-color: orange;
+	overflow: visible;
+}
