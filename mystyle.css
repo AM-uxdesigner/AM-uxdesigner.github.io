@@ -4,12 +4,12 @@
 font-family: 'Monoton', cursive;*/
 *{
 	box-sizing: border-box;
-	box-sizing: content-box;
 }
 
 ul {
 
 	list-style-type: none;
+	padding:0;
 }
 
 body {
@@ -69,6 +69,27 @@ img {
 width: auto;
 }
 
+.article {
+	display: inline-block;
+	float: inline-block;
+	max-width: 33%;
+	min-width: 32%;
+	border: 1px solid #404040;
+	border-radius: 4px;
+	font-size: 0.9rem;
+	padding:2px 4px 2px 4px;
+	background-color: #303030;
+}
+
+@media screen and (max-width: 600px) {
+	.article {
+		max-width: 100%;
+		clear: both;
+		display: block;
+		left: 0;
+		top: 0;
+		}	
+}
 
 articles {
 	display: inline-block;
